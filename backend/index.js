@@ -60,7 +60,8 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(PORT, () => {console.log(`Server Port: ${PORT}`);
+    console.log("database connted");});
 
     /* ADD DATA ONE TIME */
     // User.insertMany(users);
